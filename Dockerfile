@@ -9,7 +9,7 @@ RUN \
   apt-get install -y libreadline-dev libncurses5-dev libpcre3-dev libssl-dev perl make wget dnsmasq && \
   apt-get clean && \
   cd /home && \
-  wget https://openresty.org/download/ngx_openresty-1.7.7.1.tar.gz && \
+  wget --no-check-certificate https://openresty.org/download/ngx_openresty-1.7.7.1.tar.gz && \
   tar -xzvf ngx_openresty-1.7.7.1.tar.gz && \
   rm -f ngx_openresty-1.7.7.1.tar.gz && \
   cd ngx_openresty-1.7.7.1 && \
