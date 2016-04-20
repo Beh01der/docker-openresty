@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND noninteractive
 # Compile openresty from source.
 RUN \
   apt-get update && \
-  apt-get install -y libreadline-dev libncurses5-dev libpcre3-dev libssl-dev perl make wget dnsmasq && \
+  apt-get install -y libreadline-dev libncurses5-dev libpcre3-dev libssl-dev perl make wget dnsmasq openssl unzip && \
   apt-get clean && \
   cd /home && \
   wget --no-check-certificate https://openresty.org/download/ngx_openresty-1.7.7.1.tar.gz && \
